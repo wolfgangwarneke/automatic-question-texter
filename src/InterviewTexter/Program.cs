@@ -14,7 +14,8 @@ namespace InterviewTexter
         public static void Main(string[] args)
         {
             Console.WriteLine("Would you like to add a question? (Y/N)");
-            if(Console.ReadLine() == "Y")
+            string yesOrNo = Console.ReadLine();
+            if (yesOrNo == "Y" || yesOrNo == "y" || yesOrNo == "Yes" || yesOrNo == "yes")
             {
                 using (var db = new QuestionContext())
                 {
@@ -56,7 +57,7 @@ namespace InterviewTexter
                     questionToText = randomQuestion.question;
                     categoryToText = randomQuestion.category;
                 }
-                    Thread.Sleep(i * 10 * 1000);
+                    Thread.Sleep(minutes * 60 * 1000);
                 Console.WriteLine("--Alert-- '" + questionToText + "' is the question we'll send out or the category " + categoryToText.ToUpper());
                 Console.WriteLine(DateTime.Now);
                 TextMeAQuestion(questionToText, categoryToText);
@@ -77,7 +78,8 @@ namespace InterviewTexter
             client.Authenticator = new HttpBasicAuthenticator(EnvironmentVariables.AccountSid, EnvironmentVariables.AuthToken);
             client.ExecuteAsync(request, response =>
             {
-                Console.WriteLine(response.Content);
+                //Console.WriteLine(response.Content);
+                Console.WriteLine("Heads up!  Question text coming your way.");
             });
         }
     }  
