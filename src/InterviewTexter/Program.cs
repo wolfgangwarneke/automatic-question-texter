@@ -12,12 +12,22 @@ namespace InterviewTexter
     {
         public static void Main(string[] args)
         {
-            while (true)
+            //TO IMPLEMENT: ask user for interval and how many, then do it.
+            Console.WriteLine("Welcome to Epicodus interview question texter v 1.0!");
+            Console.WriteLine("How often (in minutes) would you like to be asked a question?");
+            int minutes = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("How many times would you like to be sent a question?");
+            int questionsAmt = Int32.Parse(Console.ReadLine());
+
+            for (int i = 0; i < questionsAmt; i ++)
             {
-                Thread.Sleep(1 * 60 * 1000);
+                Thread.Sleep(i * 60 * 1000);
                 Console.WriteLine(DateTime.Now);
                 TextMeAQuestion();
             }
+
+            Console.WriteLine("Goodbye.");
+            Console.ReadLine();
         }
 
         public static void TextMeAQuestion()
@@ -37,7 +47,6 @@ namespace InterviewTexter
             {
                 Console.WriteLine(response.Content);
             });
-            //Console.ReadLine();
         }
     }  
 }
