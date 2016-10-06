@@ -1,5 +1,5 @@
---temp-output:c:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\obj\Debug\netcoreapp1.0\
---out:c:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\bin\Debug\netcoreapp1.0\InterviewTexter.dll
+--temp-output:C:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\bin\src\InterviewTexter\obj\Debug\netcoreapp1.0\
+--out:C:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\bin\src\InterviewTexter\bin\Debug\netcoreapp1.0\InterviewTexter.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -147,9 +147,8 @@
 --reference:C:\Users\Wolfgang\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Wolfgang\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 --reference:C:\Users\Wolfgang\.nuget\packages\System.Xml.XmlSerializer\4.0.11\ref\netstandard1.3\System.Xml.XmlSerializer.dll
-c:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\EnvironmentVariables.cs
-c:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\InterviewQuestionsContext.cs
-c:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\Program.cs
-c:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\Models\Question.cs
-c:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\Models\QuestionContext.cs
-c:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\Properties\AssemblyInfo.cs
+C:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\EnvironmentVariables.cs
+C:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\Program.cs
+C:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\Models\Question.cs
+C:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\Models\QuestionContext.cs
+C:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\Properties\AssemblyInfo.cs

@@ -7,8 +7,8 @@
 -debug:full
 -nostdlib
 -nologo
-"c:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
--out:"c:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\bin\Debug\netcoreapp1.0\InterviewTexter.dll"
+"C:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\bin\src\InterviewTexter\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
+-out:"C:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\bin\src\InterviewTexter\bin\Debug\netcoreapp1.0\InterviewTexter.dll"
 -r:"C:\Users\Wolfgang\.nuget\packages\Microsoft.AspNetCore.Hosting.Abstractions\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Hosting.Abstractions.dll"
 -r:"C:\Users\Wolfgang\.nuget\packages\Microsoft.AspNetCore.Hosting.Server.Abstractions\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll"
 -r:"C:\Users\Wolfgang\.nuget\packages\Microsoft.AspNetCore.Http.Abstractions\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Http.Abstractions.dll"
@@ -143,9 +143,8 @@
 -r:"C:\Users\Wolfgang\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\Wolfgang\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
 -r:"C:\Users\Wolfgang\.nuget\packages\System.Xml.XmlSerializer\4.0.11\ref\netstandard1.3\System.Xml.XmlSerializer.dll"
-"c:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\EnvironmentVariables.cs"
-"c:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\InterviewQuestionsContext.cs"
-"c:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\Program.cs"
-"c:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\Models\Question.cs"
-"c:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\Models\QuestionContext.cs"
-"c:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\Properties\AssemblyInfo.cs"
+"C:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\EnvironmentVariables.cs"
+"C:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\Program.cs"
+"C:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\Models\Question.cs"
+"C:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\Models\QuestionContext.cs"
+"C:\users\wolfgang\documents\visual studio 2015\Projects\InterviewTexter\src\InterviewTexter\Properties\AssemblyInfo.cs"
