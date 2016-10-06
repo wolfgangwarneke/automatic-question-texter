@@ -46,23 +46,34 @@ namespace InterviewTexter
 
             for (int i = 0; i < questionsAmt; i ++)
             {
-                Thread.Sleep(i * 10 * 1000);
+                string questionToText;
+                string categoryToText;
+                using (var db = new QuestionContext())
+                {
+                    Random rand = new Random();
+                    int toSkip = rand.Next(1, db.Question.Count());
+                    Question randomQuestion = db.Question.OrderBy(r => Guid.NewGuid()).Skip(toSkip).Take(1).First();
+                    questionToText = randomQuestion.question;
+                    categoryToText = randomQuestion.category;
+                }
+                    Thread.Sleep(i * 10 * 1000);
+                Console.WriteLine("--Alert-- '" + questionToText + "' is the question we'll send out or the category " + categoryToText.ToUpper());
                 Console.WriteLine(DateTime.Now);
-                TextMeAQuestion();
+                TextMeAQuestion(questionToText, categoryToText);
             }
 
             Console.WriteLine("Goodbye.");
             Console.ReadLine();
         }
 
-        public static void TextMeAQuestion()
+        public static void TextMeAQuestion(string questlove, string category)
         {
             Console.WriteLine("cool");
             var client = new RestClient("https://api.twilio.com/2010-04-01");
             var request = new RestRequest("Accounts/" + EnvironmentVariables.AccountSid + "/Messages", Method.POST);
             request.AddParameter("To", EnvironmentVariables.OwnPhone);
             request.AddParameter("From", EnvironmentVariables.TwilioPhone);
-            request.AddParameter("Body", "Hello world!");
+            request.AddParameter("Body", category.ToUpper() + ": " + questlove);
             client.Authenticator = new HttpBasicAuthenticator(EnvironmentVariables.AccountSid, EnvironmentVariables.AuthToken);
             client.ExecuteAsync(request, response =>
             {
