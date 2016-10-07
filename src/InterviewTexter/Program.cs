@@ -13,6 +13,14 @@ namespace InterviewTexter
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to Epicodus interview question texter v 1.0!");
+            Console.WriteLine("|");
+            Console.WriteLine("|");
+            Console.WriteLine("|");
+            Console.WriteLine("|******************");
+            Console.WriteLine("|------------------");
+            Console.WriteLine("");
+            Console.WriteLine("");
             Console.WriteLine("Would you like to add a question? (Y/N)");
             string yesOrNo = Console.ReadLine();
             if (yesOrNo == "Y" || yesOrNo == "y" || yesOrNo == "Yes" || yesOrNo == "yes")
@@ -38,7 +46,6 @@ namespace InterviewTexter
 
 
 
-            //TO IMPLEMENT: ask user for interval and how many, then do it.
             Console.WriteLine("Welcome to Epicodus interview question texter v 1.0!");
             Console.WriteLine("How often (in minutes) would you like to be asked a question?");
             int minutes = Int32.Parse(Console.ReadLine());
@@ -57,7 +64,7 @@ namespace InterviewTexter
                     questionToText = randomQuestion.question;
                     categoryToText = randomQuestion.category;
                 }
-                    Thread.Sleep(minutes * 60 * 1000);
+                    Thread.Sleep(minutes * 60 * 1000);//minutes seconds milliseconds
                 Console.WriteLine("--Alert-- '" + questionToText + "' is the question we'll send out or the category " + categoryToText.ToUpper());
                 Console.WriteLine(DateTime.Now);
                 TextMeAQuestion(questionToText, categoryToText);
